@@ -33,7 +33,7 @@
          <children>
             <ImageView fitHeight="43.0" fitWidth="44.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Struktur%20Data/PROJECT/Project/src/img/pngwing.com.png" />
+                  <Image url="@img/pngwing.com.png" />
                </image>
                <HBox.margin>
                   <Insets left="5.0" top="15.0" />
