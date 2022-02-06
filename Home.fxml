@@ -25,7 +25,7 @@
       </Text>
       <ImageView fitHeight="295.0" fitWidth="362.0" layoutX="-1.0" layoutY="139.0">
          <image>
-            <Image url="@../../../../Struktur%20Data/PROJECT/Project/src/img/bus-stop-pana-1211.png" />
+            <Image url="@img/bus-stop-pana-1211.png" />
          </image>
       </ImageView>
       <Text layoutX="24.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat datang pada aplikasi Trans Bus">
