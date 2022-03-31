@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListBus">
+   <children>
+      <Label layoutX="457.0" layoutY="145.0" text="List Bus Tersedia" textFill="#0071bd">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_penjualan" layoutX="195.0" layoutY="256.0" prefHeight="347.0" prefWidth="889.0">
+         <columns>
+            <TableColumn fx:id="Id" minWidth="180.0" prefWidth="75.0" text="Nama bus" />
+            <TableColumn fx:id="NamaBus" minWidth="180.0" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="NamaPembeli" minWidth="180.0" prefWidth="75.0" text="Asal" />
+            <TableColumn fx:id="Quantity" minWidth="180.0" prefWidth="75.0" text="Tujuan" />
+            <TableColumn fx:id="Total" minWidth="180.0" prefWidth="75.0" text="Harga" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="back" fitHeight="25.0" fitWidth="115.0" layoutX="87.0" layoutY="59.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Compressed/Project_BusApplication-main/picture/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

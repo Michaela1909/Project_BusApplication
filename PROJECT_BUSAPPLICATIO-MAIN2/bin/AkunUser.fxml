@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AKUN">
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="72.0" layoutX="491.0" layoutY="131.0">
+         <image>
+            <Image url="@../../../../../Downloads/image-removebg-preview%20(12).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="UsName" layoutX="587.0" layoutY="131.0" prefHeight="35.0" prefWidth="142.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="EditAkun" fill="RED" fontSmoothingType="LCD" layoutX="587.0" layoutY="190.0" onMouseClicked="#EditAkun" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Akun">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="491.0" layoutY="212.0" stroke="TRANSPARENT" strokeType="INSIDE" width="579.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="513.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masuk Halte cukup dengan wajah ayo perbaharui Foto profil Kamu ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="pemesanansaya" alignment="BASELINE_LEFT" layoutX="491.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnPemesananSaya" prefHeight="54.0" prefWidth="579.0" text="Pemesanan saya">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="jadwalbus" alignment="BASELINE_LEFT" layoutX="491.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnJadwalBus" prefHeight="54.0" prefWidth="579.0" text="Jadwal Bus">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" layoutX="491.0" layoutY="444.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="579.0" text="VERSI APLIKASI">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1034.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/image-removebg-preview%20(17).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1034.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/image-removebg-preview%20(17).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1034.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/image-removebg-preview%20(17).png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="720.0" stroke="TRANSPARENT" strokeType="INSIDE" width="333.0" />
+      <ImageView fx:id="JadwalBus" fitHeight="27.0" fitWidth="200.0" layoutX="50.0" layoutY="194.0" onMouseClicked="#BusTersedia">
+         <image>
+            <Image url="@../../../../../Downloads/messageImage_1648346366857-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="History" fitHeight="24.0" fitWidth="200.0" layoutX="50.0" layoutY="264.0" onMouseClicked="#Pemesanan">
+         <image>
+            <Image url="@../../../../../Downloads/messageImage_1648346378070-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Akun" fitHeight="20.0" fitWidth="200.0" layoutX="50.0" layoutY="348.0" onMouseClicked="#AkunUser">
+         <image>
+            <Image url="@../../../../../Downloads/messageImage_1648346386290-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="HubungiKami" fitHeight="23.0" fitWidth="200.0" layoutX="50.0" layoutY="395.0" onMouseClicked="#ContactUs">
+         <image>
+            <Image url="@../../../../../Downloads/messageImage_1648346393834-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="LogOut" fill="#0071bd" layoutX="51.0" layoutY="489.0" onMouseClicked="#KemabaliKeHome" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" wrappingWidth="95.73751831054688">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Line endX="174.0" layoutX="151.0" layoutY="318.0" startX="-100.0" stroke="SILVER" />
+      <Line endX="174.0" layoutX="150.0" layoutY="437.0" startX="-100.0" stroke="SILVER" />
+   </children>
+</AnchorPane>
