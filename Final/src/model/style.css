@@ -1,0 +1,13 @@
+.list-view .list-cell{
+    -fx-alignment: LEFT;
+    -fx-font-size: 12pt;
+}
+.list-view .list-cell:odd{
+    -fx-background-color: transparent;
+}
+.list-view .list-cell:even{
+    -fx-background-color: transparent;
+}
+.list-view .scroll-bar{
+    -fx-background-color: transparent;
+}
