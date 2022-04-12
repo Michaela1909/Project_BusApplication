@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pesan">
+   <children>
+      <Button fx:id="btnBack" layoutX="318.0" layoutY="153.0" mnemonicParsing="false" onAction="#back" prefHeight="37.07" prefWidth="100.0" style="-fx-background-color: rgba(0,0,0,0);" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <graphic>
+            <ImageView fitHeight="37.07" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="jadwalBus" layoutX="100.0" layoutY="207.0" prefHeight="294.0" prefWidth="1080.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="300.0">
+         <columns>
+            <TableColumn fx:id="tcBusID" prefWidth="77.0" text="BusID" />
+            <TableColumn fx:id="tcNamaBus" prefWidth="154.0" text="Nama Bus" />
+            <TableColumn fx:id="tcKapasitas" prefWidth="77.0" text="Kapasitas" />
+            <TableColumn fx:id="tcAsal" prefWidth="154.0" text="Asal" />
+            <TableColumn fx:id="tcTujuan" prefWidth="154.0" text="Tujuan" />
+            <TableColumn fx:id="tcTanggal" prefWidth="154.0" text="Tanggal" />
+            <TableColumn fx:id="tcWaktu" prefWidth="154.0" text="Waktu" />
+            <TableColumn fx:id="tcHarga" prefWidth="154.0" text="Harga" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnPesan" layoutX="571.0" layoutY="560.0" mnemonicParsing="false" onAction="#btnPesan" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #0071Bd; -fx-background-radius: 25;" text="Pesan" textFill="WHITE" AnchorPane.leftAnchor="571.0" AnchorPane.topAnchor="630.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbAsal" layoutX="358.0" layoutY="99.0" prefWidth="200.0" promptText="Asal" AnchorPane.leftAnchor="358.0" AnchorPane.topAnchor="99.0" />
+      <ComboBox fx:id="cbTujuan" layoutX="758.0" layoutY="99.0" prefWidth="200.0" promptText="Tujuan" AnchorPane.leftAnchor="758.0" AnchorPane.topAnchor="99.0" />
+      <DatePicker fx:id="dpTanggal" layoutX="570.0" layoutY="174.0" AnchorPane.leftAnchor="571.0" />
+      <Label layoutX="580.0" layoutY="152.0" text="Tanggal " AnchorPane.leftAnchor="571.0" />
+      <Button fx:id="btnCari" layoutX="571.0" layoutY="223.0" mnemonicParsing="false" onAction="#Cari" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0071Bd; -fx-background-radius: 25;" text="Cari" textFill="WHITE" AnchorPane.leftAnchor="571.0" AnchorPane.topAnchor="223.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="100.0" layoutX="642.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="98.0">
+         <image>
+            <Image url="@pic/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0071bd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataPengguna">
+   <children>
+      <AnchorPane layoutX="540.0" layoutY="244.0" prefHeight="620.0" prefWidth="1180.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label text="Hello, Admin" textFill="#0071db" underline="true" AnchorPane.leftAnchor="982.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Data Pengguna" AnchorPane.leftAnchor="412.0" AnchorPane.topAnchor="87.0">
+               <font>
+                  <Font name="Arial Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back" fitHeight="37.07" fitWidth="100.0" layoutX="130.0" layoutY="101.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table_dataPengguna" layoutX="166.0" layoutY="290.0" prefHeight="347.01" prefWidth="1080.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="208.0">
+              <columns>
+                <TableColumn fx:id="Id" minWidth="216.0" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="NamaLengkap" minWidth="216.0" prefWidth="75.0" text="Nama Lengkap" />
+                  <TableColumn fx:id="email" minWidth="216.0" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="password" minWidth="216.0" prefWidth="75.0" text="Password" />
+                  <TableColumn fx:id="confirmPassword" minWidth="216.0" prefWidth="75.0" text="Confirm Password" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

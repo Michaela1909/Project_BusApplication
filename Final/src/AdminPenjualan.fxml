@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0071BD;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPenjualan">
+   <children>
+      <AnchorPane layoutX="540.0" layoutY="236.0" prefHeight="620.0" prefWidth="1180.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label text="Penjualan" AnchorPane.leftAnchor="489.0" AnchorPane.topAnchor="87.0">
+               <font>
+                  <Font name="Arial Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label text="Hello, Admin" textFill="#0071db" underline="true" AnchorPane.leftAnchor="982.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back" fitHeight="37.07" fitWidth="100.0" layoutX="138.0" layoutY="107.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table_penjualan" layoutX="174.0" layoutY="296.0" prefHeight="347.1" prefWidth="1080.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="208.0">
+              <columns>
+                <TableColumn fx:id="tcID" minWidth="77.0" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="tcNamaBus" minWidth="185.2" prefWidth="75.0" text="Nama Bus" />
+                  <TableColumn fx:id="tcNamaPembeli" minWidth="185.2" prefWidth="75.0" text="Nama Pembeli" />
+                  <TableColumn fx:id="tcQty" minWidth="77.0" prefWidth="75.0" text="Quantity" />
+                  <TableColumn fx:id="tcTotal" minWidth="185.2" prefWidth="75.0" text="Total" />
+                  <TableColumn fx:id="tcTanggalTransaksi" minWidth="185.2" prefWidth="75.0" text="Tanggal Transaksi" />
+                  <TableColumn fx:id="tcMetodePembayaran" minWidth="185.2" prefWidth="75.0" text="Metode Pembayaran" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

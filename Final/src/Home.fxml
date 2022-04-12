@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home">
+   <children>
+      <Text layoutX="589.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto;" text="Halo" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="15.5" offsetY="1.0" radius="5.875" width="10.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fitHeight="295.0" fitWidth="362.0" layoutX="448.0" layoutY="171.0">
+         <image>
+            <Image url="@../../../PROJECT/UAS/UAS/src/pic/bus-stop-pana-1211.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="473.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat datang pada aplikasi Trans Bus">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="15.5" offsetY="1.0" radius="5.875" width="10.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="682.0" layoutY="528.0" mnemonicParsing="false" onMouseClicked="#Register" prefHeight="40.0" prefWidth="280.0" style="-fx-background-radius: 33; -fx-background-color: #0071BD;" text="Register" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#Login" prefHeight="40.0" prefWidth="280.0" style="-fx-background-radius: 33; -fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-radius: 33;" text="Login" textAlignment="CENTER" textFill="#0071bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="AdminButton" alignment="CENTER" layoutX="589.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#adMIN" prefHeight="27.0" prefWidth="111.0" style="-fx-background-radius: 33; -fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-radius: 33;" text="Admin" textFill="#004dff" />
+   </children>
+</AnchorPane>

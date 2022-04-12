@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="1390.0" layoutX="-101.0" layoutY="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../PROJECT/UAS/UAS/src/pic/PngBusPembeliantiket.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnPesanTiket" layoutX="526.0" layoutY="551.0" mnemonicParsing="false" onAction="#PesanTiket" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #0071bd; -fx-background-radius: 30;" text="Pesan Tiket" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Button>
+      <Text fill="#0071bd" fontSmoothingType="LCD" layoutX="208.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PESAN TIKET BUS">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#0071bd" fontSmoothingType="LCD" layoutX="310.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAK RIBET">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="btnMenu" fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../../../PROJECT/UAS/UAS/src/pic/menu.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0071bd" fontSmoothingType="LCD" layoutX="305.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAK ANTRI">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="pane1" layoutX="208.0" layoutY="-878.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="pane2" layoutX="23.0" layoutY="1012.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #FBF8F8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="111.0" layoutY="194.0" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/menu.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <ImageView fx:id="JadwalBus" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#JadwalBus" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346366857-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="PemesananSaya" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#PemesananSaya" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346378070-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="250.0" startX="-100.0" stroke="#aca1a1">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Line>
+                  <ImageView fx:id="Akun" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#Akun" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346386290-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="HubungiKami" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#HubungiKami" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346393834-removebg-preview.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Line endX="250.0" startX="-100.0" stroke="#aca1a1">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: rgba (0,0,0,0);" text="Log Out" textFill="#0071bd">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
