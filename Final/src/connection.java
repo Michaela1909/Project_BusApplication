@@ -6,7 +6,7 @@ public class connection{
     public static Connection BusConnecition(){
         Connection conn = null;
         try{
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/BusApplication", "root", "Nml_19092002");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/busapplication", "root", "Ejgaming1234");
             if(conn !=null){
                 System.out.println("successfull connect");
             }

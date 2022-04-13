@@ -24,7 +24,7 @@
             </Label>
             <ImageView fx:id="back" fitHeight="37.07" fitWidth="100.0" layoutX="138.0" layoutY="107.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
                <image>
-                  <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+                  <Image url="@pic/back.png" />
                </image>
             </ImageView>
             <TableView fx:id="table_penjualan" layoutX="174.0" layoutY="296.0" prefHeight="347.1" prefWidth="1080.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="208.0">

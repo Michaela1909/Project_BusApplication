@@ -13,7 +13,7 @@
    <children>
       <ImageView fx:id="back" fitHeight="35.0" fitWidth="135.67" layoutX="167.0" layoutY="102.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
          <image>
-            <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+            <Image url="@pic/back.png" />
          </image>
       </ImageView>
       <AnchorPane layoutX="284.0" layoutY="122.0" prefHeight="477.74" prefWidth="726.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;" styleClass="shadow" stylesheets="@../../../PROJECT/UAS/UAS/src/styles.css" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="145.92">
@@ -49,11 +49,6 @@
             </Button>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="286.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="286.0" AnchorPane.topAnchor="103.0">
-         <image>
-            <Image url="@../../../../../../Downloads/Screenshot_2022-03-26_at_21.19.51-removebg-preview.png" />
-         </image>
-      </ImageView>
       <Label layoutX="368.0" layoutY="106.0" text="Contact Us" textFill="#0071bd" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="96.0">
          <font>
             <Font size="36.0" />

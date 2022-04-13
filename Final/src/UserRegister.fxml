@@ -64,7 +64,7 @@
       <Label fx:id="regisMessage" layoutX="457.0" layoutY="129.0" prefHeight="17.0" prefWidth="392.0" textFill="RED" AnchorPane.leftAnchor="444.0" />
       <ImageView fx:id="back" fitHeight="25.0" fitWidth="115.0" layoutX="52.0" layoutY="-25.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
          <image>
-            <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+            <Image url="@pic/back.png" />
          </image>
       </ImageView>
    </children>

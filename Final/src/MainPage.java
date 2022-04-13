@@ -51,7 +51,11 @@ public class MainPage implements Initializable{
     private AnchorPane pane2;
 
     @FXML
-    void Akun(MouseEvent event) {
+    void Akun(MouseEvent event) throws IOException {
+        Stage stage = (Stage) HubungiKami.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("Account.fxml"));
+        stage.setTitle("Account");
+        stage.setScene(new Scene(root));
 
     }
 
@@ -59,7 +63,7 @@ public class MainPage implements Initializable{
     void HubungiKami(MouseEvent event) throws IOException {
         Stage stage = (Stage) HubungiKami.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("UserContactUs.fxml"));
-        stage.setTitle("Bus");
+        stage.setTitle("Contact Us");
         stage.setScene(new Scene(root));
     }
 
@@ -67,7 +71,7 @@ public class MainPage implements Initializable{
     void JadwalBus(MouseEvent event) throws IOException {
         Stage stage = (Stage) JadwalBus.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("UserJadwalBus.fxml"));
-        stage.setTitle("Bus");
+        stage.setTitle("Bus Schedule");
         stage.setScene(new Scene(root));
     }
 

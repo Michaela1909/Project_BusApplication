@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="432.0" fitWidth="1390.0" layoutX="-101.0" layoutY="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../../../PROJECT/UAS/UAS/src/pic/PngBusPembeliantiket.png" />
+            <Image url="@pic/PngBusPembeliantiket.png" />
          </image>
       </ImageView>
       <Button fx:id="btnPesanTiket" layoutX="526.0" layoutY="551.0" mnemonicParsing="false" onAction="#PesanTiket" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #0071bd; -fx-background-radius: 30;" text="Pesan Tiket" textFill="WHITE">
@@ -53,7 +53,7 @@
                         <Insets left="50.0" top="50.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/menu.png" />
+                        <Image url="@pic/menu.png" />
                      </image>
                   </ImageView>
                   <Pane prefHeight="200.0" prefWidth="200.0" />
@@ -62,7 +62,7 @@
                         <Insets bottom="20.0" left="50.0" right="50.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346366857-removebg-preview.png" />
+                        <Image url="@pic/messageImage_1648346366857-removebg-preview.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="PemesananSaya" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#PemesananSaya" pickOnBounds="true" preserveRatio="true">
@@ -70,7 +70,7 @@
                         <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346378070-removebg-preview.png" />
+                        <Image url="@pic/messageImage_1648346378070-removebg-preview.png" />
                      </image>
                   </ImageView>
                   <Line endX="250.0" startX="-100.0" stroke="#aca1a1">
@@ -83,12 +83,12 @@
                         <Insets bottom="20.0" left="50.0" right="50.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346386290-removebg-preview.png" />
+                        <Image url="@pic/messageImage_1648346386290-removebg-preview.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="HubungiKami" fitHeight="150.0" fitWidth="300.0" onMouseClicked="#HubungiKami" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../PROJECT/UAS/UAS/src/pic/messageImage_1648346393834-removebg-preview.png" />
+                        <Image url="@pic/messageImage_1648346393834-removebg-preview.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />

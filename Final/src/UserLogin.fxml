@@ -76,7 +76,7 @@
       <Label fx:id="loginMessage" layoutX="497.0" layoutY="219.0" prefHeight="29.0" prefWidth="306.0" textAlignment="CENTER" textFill="RED" />
       <ImageView fx:id="BacktoHome" fitHeight="25.0" fitWidth="115.0" layoutX="115.0" layoutY="44.0" onMouseClicked="#backWard" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
          <image>
-            <Image url="@../../../PROJECT/UAS/UAS/src/pic/back.png" />
+            <Image url="@pic/back.png" />
          </image>
       </ImageView>
    </children>
