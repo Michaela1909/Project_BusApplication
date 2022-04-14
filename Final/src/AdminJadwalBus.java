@@ -227,7 +227,6 @@ public class AdminJadwalBus implements Initializable{
                     jadwalBus.getItems().clear();
                     jadwalBus.getItems().addAll(list);
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
