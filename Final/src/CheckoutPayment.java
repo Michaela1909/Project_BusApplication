@@ -72,30 +72,34 @@ public class CheckoutPayment implements Initializable{
 
     @FXML
     void Bayar(ActionEvent event) throws IOException {
-        try {
-            PreparedStatement pst = con.prepareStatement("UPDATE Transaksi SET MetodePembayaran = ? ORDER BY TransaksiID DESC LIMIT 1");
-            pst.setString(1, cbMetodePembayaran.getSelectionModel().getSelectedItem());
-            pst.execute();
-
-            pst = con.prepareStatement("UPDATE JadwalBus SET Kapasitas = Kapasitas - ? WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1)");
-            pst.setInt(1, Integer.parseInt(labelQuantity.getText()));
-            pst.execute();
-
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Berhasil");
-            alert.setHeaderText("Anda Berhasil Melakukan Pembayaran!");
-            alert.setContentText("Terima Kasih.");
-            alert.showAndWait();
-
-            Stage stage = (Stage) btnBack.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
-            stage.setTitle("Bus");
-            stage.setScene(new Scene(root));
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            e.getCause();
-        }
+        if(cbMetodePembayaran.getSelectionModel().getSelectedItem()==null){
+            MetodePembayaranMsg();
+        }else{
+            try {
+                PreparedStatement pst = con.prepareStatement("UPDATE Transaksi SET MetodePembayaran = ? ORDER BY TransaksiID DESC LIMIT 1");
+                pst.setString(1, cbMetodePembayaran.getSelectionModel().getSelectedItem());
+                pst.execute();
+    
+                pst = con.prepareStatement("UPDATE JadwalBus SET Kapasitas = Kapasitas - ? WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1)");
+                pst.setInt(1, Integer.parseInt(labelQuantity.getText()));
+                pst.execute();
+    
+                Alert alert = new Alert(AlertType.INFORMATION);
+                alert.setTitle("Berhasil");
+                alert.setHeaderText("Anda Berhasil Melakukan Pembayaran!");
+                alert.setContentText("Terima Kasih.");
+                alert.showAndWait();
+    
+                Stage stage = (Stage) btnBack.getScene().getWindow();
+                Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+                stage.setTitle("Bus");
+                stage.setScene(new Scene(root));
+    
+            } catch (Exception e) {
+                e.printStackTrace();
+                e.getCause();
+            }
+        } 
     }
 
     @Override
@@ -139,6 +143,13 @@ public class CheckoutPayment implements Initializable{
             e.printStackTrace();
             e.getCause();
         }
+    }
+    public void MetodePembayaranMsg(){
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Error");
+        alert.setHeaderText("Silahkan coba lagi!");
+        alert.setContentText("Silahkan pilih metode pembayaran yang ingin digunakan terlebih dahulu!");
+        alert.showAndWait();
     }
 
 }
