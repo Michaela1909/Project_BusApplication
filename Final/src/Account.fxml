@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="68.0" fitWidth="72.0" layoutX="360.0" layoutY="138.0">
          <image>
-            <Image url="@../../../../Downloads/image-removebg-preview%20(12).png" />
+            <Image url="@pic/account.png" />
          </image>
       </ImageView>
       <Label layoutX="455.0" layoutY="154.0" prefHeight="35.0" prefWidth="142.0" text="Welcome">
@@ -34,5 +34,14 @@
       <Button fx:id="Logout" layoutX="839.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnLogout" prefHeight="26.0" prefWidth="132.0" text="Logout" />
       <TextField fx:id="tf_password" layoutX="360.0" layoutY="407.0" prefHeight="26.0" prefWidth="293.0" promptText="Password" />
       <Label fx:id="lb_userid" layoutX="360.0" layoutY="288.0" text="User ID" />
+      <Button fx:id="btnBack" layoutX="113.0" layoutY="68.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: rgba(0,0,0,0);" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <graphic>
+            <ImageView fitHeight="37.07" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
