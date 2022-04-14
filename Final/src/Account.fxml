@@ -23,7 +23,7 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="357.0" layoutY="218.0" stroke="TRANSPARENT" strokeType="INSIDE" width="614.0" />
-      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="382.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masuk Halte cukup dengan wajah ayo perbaharui Foto profil Kamu ">
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="462.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Ayo perbaharui Profil Akun Kamu Sekarang!&quot;">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
