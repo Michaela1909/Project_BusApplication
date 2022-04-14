@@ -1151,7 +1151,7 @@ public class Seat implements Initializable{
     public void getStatusA1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1166,7 +1166,7 @@ public class Seat implements Initializable{
     public void getStatusA2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1181,7 +1181,7 @@ public class Seat implements Initializable{
     public void getStatusA3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1196,7 +1196,7 @@ public class Seat implements Initializable{
     public void getStatusA4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'A4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1211,7 +1211,7 @@ public class Seat implements Initializable{
     public void getStatusB1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1226,7 +1226,7 @@ public class Seat implements Initializable{
     public void getStatusB2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1241,7 +1241,7 @@ public class Seat implements Initializable{
     public void getStatusB3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1256,7 +1256,7 @@ public class Seat implements Initializable{
     public void getStatusB4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'B4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1271,7 +1271,7 @@ public class Seat implements Initializable{
     public void getStatusC1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1286,7 +1286,7 @@ public class Seat implements Initializable{
     public void getStatusC2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1301,7 +1301,7 @@ public class Seat implements Initializable{
     public void getStatusC3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1316,7 +1316,7 @@ public class Seat implements Initializable{
     public void getStatusC4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'C4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1331,7 +1331,7 @@ public class Seat implements Initializable{
     public void getStatusD1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1346,7 +1346,7 @@ public class Seat implements Initializable{
     public void getStatusD2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1361,7 +1361,7 @@ public class Seat implements Initializable{
     public void getStatusD3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1376,7 +1376,7 @@ public class Seat implements Initializable{
     public void getStatusD4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'D4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1391,7 +1391,7 @@ public class Seat implements Initializable{
     public void getStatusE1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1406,7 +1406,7 @@ public class Seat implements Initializable{
     public void getStatusE2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1421,7 +1421,7 @@ public class Seat implements Initializable{
     public void getStatusE3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1436,7 +1436,7 @@ public class Seat implements Initializable{
     public void getStatusE4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'E4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1451,7 +1451,7 @@ public class Seat implements Initializable{
     public void getStatusF1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1466,7 +1466,7 @@ public class Seat implements Initializable{
     public void getStatusF2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1481,7 +1481,7 @@ public class Seat implements Initializable{
     public void getStatusF3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1496,7 +1496,7 @@ public class Seat implements Initializable{
     public void getStatusF4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'F4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1511,7 +1511,7 @@ public class Seat implements Initializable{
     public void getStatusG1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1526,7 +1526,7 @@ public class Seat implements Initializable{
     public void getStatusG2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1541,7 +1541,7 @@ public class Seat implements Initializable{
     public void getStatusG3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1556,7 +1556,7 @@ public class Seat implements Initializable{
     public void getStatusG4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'G4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1571,7 +1571,7 @@ public class Seat implements Initializable{
     public void getStatusH1(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H1'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H1'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1586,7 +1586,7 @@ public class Seat implements Initializable{
     public void getStatusH2(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H2'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H2'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1601,7 +1601,7 @@ public class Seat implements Initializable{
     public void getStatusH3(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H3'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H3'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1616,7 +1616,7 @@ public class Seat implements Initializable{
     public void getStatusH4(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H4'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H4'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1631,7 +1631,7 @@ public class Seat implements Initializable{
     public void getStatusH5(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H5'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H5'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
@@ -1646,7 +1646,7 @@ public class Seat implements Initializable{
     public void getStatusH6(){
         try {
             Statement st = con.createStatement();
-            String sql = "SELECT Status FROM SEAT WHERE TransaksiID = (SELECT TransaksiID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H6'";
+            String sql = "SELECT Status FROM SEAT WHERE BusID = (SELECT BusID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1) AND SeatName = 'H6'";
             ResultSet rs = st.executeQuery(sql);
             if(rs.next()){
                 if(rs.getInt(1)==1){
