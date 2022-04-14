@@ -26,7 +26,8 @@ CREATE TABLE Transaksi (
     UserID INT,
     Quantity INT,
     TotalHarga INT,
-    TanggalTransaksi DATE NOT NULL
+    TanggalTransaksi DATE NOT NULL,
+    MetodePembayaran VARCHAR NOT NULL
 );
 
 CREATE TABLE User (
