@@ -86,5 +86,4 @@ public class UserRegister {
         stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
-
 }
