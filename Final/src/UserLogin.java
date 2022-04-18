@@ -102,5 +102,4 @@ public class UserLogin {
         stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
-
 }
