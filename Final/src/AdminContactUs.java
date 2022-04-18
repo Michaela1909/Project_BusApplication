@@ -55,7 +55,6 @@ public class AdminContactUs implements Initializable{
     LinkedList<contact> list = new LinkedList<>();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         tc_contactID.setCellValueFactory(new PropertyValueFactory<>("ContactID"));
         tc_nama.setCellValueFactory(new PropertyValueFactory<>("Nama"));
         tc_email.setCellValueFactory(new PropertyValueFactory<>("Email"));
@@ -73,7 +72,6 @@ public class AdminContactUs implements Initializable{
             table_contactUs.getItems().clear();
             table_contactUs.getItems().addAll(list);
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
