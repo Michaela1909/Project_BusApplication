@@ -89,5 +89,4 @@ public class UserJadwalBus implements Initializable{
             e.getCause();
         }        
     }
-
 }
