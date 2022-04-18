@@ -105,7 +105,6 @@ public class Pesan implements Initializable{
 
     @FXML
     void btnPesan(ActionEvent event) {
-        //jadwal x = jadwalBus.getSelectionModel().getSelectedItem();
         try {
             PreparedStatement pst = con.prepareStatement("UPDATE Transaksi SET BusID = ? WHERE TransaksiID ORDER BY TransaksiID DESC LIMIT 1");
             pst.setInt(1, jadwalBus.getSelectionModel().getSelectedItem().getBusID());
@@ -116,7 +115,6 @@ public class Pesan implements Initializable{
             stage.setTitle("Bus");
             stage.setScene(new Scene(root));
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -132,7 +130,6 @@ public class Pesan implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         data = FXCollections.observableArrayList();
         getCBAsal();
         getCBTujuan();
@@ -150,7 +147,6 @@ public class Pesan implements Initializable{
             }
             cbAsal.setItems(asal);
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -167,7 +163,8 @@ public class Pesan implements Initializable{
             }
             cbTujuan.setItems(tujuan);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
+            e.getCause();
         }
     }
     private void setCellTable(){
