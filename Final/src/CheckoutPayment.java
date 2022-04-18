@@ -151,5 +151,4 @@ public class CheckoutPayment implements Initializable{
         alert.setContentText("Silahkan pilih metode pembayaran yang ingin digunakan terlebih dahulu!");
         alert.showAndWait();
     }
-
 }
