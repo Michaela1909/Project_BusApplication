@@ -42,7 +42,7 @@ public class UserContactUs {
     @FXML
     void Kirim(ActionEvent event) {
         try {
-            pst = con.prepareStatement("insert into Contact(Nama, Email, Phone, Message) VALUES (?, ?, ?, ?)");
+            pst = con.prepareStatement("insert into Contact(UserID, Nama, Email, Phone, Message) VALUES ((SELECT UserID FROM Transaksi ORDER BY TransaksiID DESC LIMIT 1),?, ?, ?, ?)");
             pst.setString(1, tf_name.getText());
             pst.setString(2, tf_email.getText());
             pst.setString(3, tf_phoneNum.getText());
@@ -69,7 +69,6 @@ public class UserContactUs {
 
             }
         } catch (Exception e) {
-            //TODO: handle exception
             e.getStackTrace();
             e.getCause();
         }
@@ -82,5 +81,4 @@ public class UserContactUs {
         stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
-
 }
