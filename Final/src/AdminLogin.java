@@ -71,7 +71,8 @@ public class AdminLogin {
                     loginMessage.setText("Email/Password yang anda masukan salah");
             }
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
+            e.getCause();
         }
     }
 
@@ -90,5 +91,4 @@ public class AdminLogin {
         stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
-
 }
