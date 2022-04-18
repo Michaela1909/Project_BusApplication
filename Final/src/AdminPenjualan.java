@@ -60,7 +60,6 @@ public class AdminPenjualan implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         tcID.setCellValueFactory(new PropertyValueFactory<>("TransaksiID"));
         tcNamaBus.setCellValueFactory(new PropertyValueFactory<>("NamaBus"));
         tcNamaPembeli.setCellValueFactory(new PropertyValueFactory<>("FullName"));
@@ -81,11 +80,8 @@ public class AdminPenjualan implements Initializable{
             table_penjualan.getItems().addAll(list);
 
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
-        }
-        
+        } 
     }
-
 }
