@@ -69,7 +69,6 @@ public class Checkout implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         try {
             Statement st = con.createStatement();
             String sql = "SELECT User.FullName, JadwalBus.NamaBus, JadwalBus.Asal, JadwalBus.Tujuan, JadwalBus.Tanggal, Transaksi.Quantity FROM JadwalBus, Transaksi, User WHERE JadwalBus.BusID = Transaksi.BusID AND User.UserID = Transaksi.UserID ORDER BY Transaksi.TransaksiID DESC LIMIT 1";
@@ -84,9 +83,9 @@ public class Checkout implements Initializable{
                 getSeat();
             }
         } catch (Exception e) {
-            //TODO: handle exception
-        }
-        
+            e.printStackTrace();
+            e.getCause();
+        }    
     }
     public void getSeat(){
         ObservableList<String> list = FXCollections.observableArrayList();
@@ -105,5 +104,4 @@ public class Checkout implements Initializable{
             e.getCause();
         }
     }
-
 }
