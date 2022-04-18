@@ -52,18 +52,17 @@ public class MainPage implements Initializable{
 
     @FXML
     void Akun(MouseEvent event) throws IOException {
-        Stage stage = (Stage) HubungiKami.getScene().getWindow();
+        Stage stage = (Stage) JadwalBus.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("Account.fxml"));
-        stage.setTitle("Account");
+        stage.setTitle("Bus");
         stage.setScene(new Scene(root));
-
     }
 
     @FXML
     void HubungiKami(MouseEvent event) throws IOException {
         Stage stage = (Stage) HubungiKami.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("UserContactUs.fxml"));
-        stage.setTitle("Contact Us");
+        stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
 
@@ -71,14 +70,14 @@ public class MainPage implements Initializable{
     void JadwalBus(MouseEvent event) throws IOException {
         Stage stage = (Stage) JadwalBus.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("UserJadwalBus.fxml"));
-        stage.setTitle("Bus Schedule");
+        stage.setTitle("Bus");
         stage.setScene(new Scene(root));
     }
 
     @FXML
     void LogOut(ActionEvent event) throws IOException {
         try {
-            PreparedStatement pst = con.prepareStatement("DELETE FROM Transaksi WHERE Quantity IS NULL OR TotalHarga IS NULL OR MetodePembayaran IS NULL");
+            PreparedStatement pst = con.prepareStatement("DELETE FROM Transaksi WHERE Quantity IS NULL OR TotalHarga IS NULL");
             pst.execute();
 
             Stage stage = (Stage) btnLogOut.getScene().getWindow();
@@ -156,8 +155,6 @@ public class MainPage implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         sideNavMenu();
     }
-
 }
