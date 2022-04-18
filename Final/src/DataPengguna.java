@@ -55,7 +55,6 @@ public class DataPengguna implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         Id.setCellValueFactory(new PropertyValueFactory<>("UserID"));
         NamaLengkap.setCellValueFactory(new PropertyValueFactory<>("FullName"));
         email.setCellValueFactory(new PropertyValueFactory<>("Email"));
@@ -73,10 +72,8 @@ public class DataPengguna implements Initializable {
             table_dataPengguna.getItems().clear();
             table_dataPengguna.getItems().addAll(list);
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
     }
-
 }
