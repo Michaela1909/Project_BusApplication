@@ -169,14 +169,12 @@ public class Seat implements Initializable{
                     btnA1.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -198,14 +196,12 @@ public class Seat implements Initializable{
                     getQuantity();
                     
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -226,14 +222,12 @@ public class Seat implements Initializable{
                     btnA3.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -254,14 +248,12 @@ public class Seat implements Initializable{
                     btnA4.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -282,14 +274,12 @@ public class Seat implements Initializable{
                     btnB1.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -310,13 +300,11 @@ public class Seat implements Initializable{
                     btnB2.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -437,13 +425,11 @@ public class Seat implements Initializable{
                     btnC3.setStyle(style1);
                     getQuantity();
                 } catch (Exception e) {
-                    //TODO: handle exception
                     e.printStackTrace();
                     e.getCause();
                 }
             }
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -1116,7 +1102,7 @@ public class Seat implements Initializable{
                 getQuantity();
             }
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
         getStatusA1(); getStatusA2(); getStatusA3(); getStatusA4();
         getStatusB1(); getStatusB2(); getStatusB3(); getStatusB4();
@@ -1136,7 +1122,6 @@ public class Seat implements Initializable{
                 labelQuantity.setText(Integer.toString(rs.getInt(1)));
             }
         } catch (Exception e) {
-            //TODO: handle exception
             e.printStackTrace();
             e.getCause();
         }
@@ -1160,7 +1145,7 @@ public class Seat implements Initializable{
             }else
                 btnA1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusA2(){
@@ -1175,7 +1160,7 @@ public class Seat implements Initializable{
             }else
                 btnA2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusA3(){
@@ -1190,7 +1175,7 @@ public class Seat implements Initializable{
             }else
                 btnA3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusA4(){
@@ -1205,7 +1190,7 @@ public class Seat implements Initializable{
             }else
                 btnA4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusB1(){
@@ -1220,7 +1205,7 @@ public class Seat implements Initializable{
             }else
                 btnB1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusB2(){
@@ -1235,7 +1220,7 @@ public class Seat implements Initializable{
             }else
                 btnB2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusB3(){
@@ -1250,7 +1235,7 @@ public class Seat implements Initializable{
             }else
                 btnB3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusB4(){
@@ -1265,7 +1250,7 @@ public class Seat implements Initializable{
             }else
                 btnB4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusC1(){
@@ -1280,7 +1265,7 @@ public class Seat implements Initializable{
             }else
                 btnC1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusC2(){
@@ -1295,7 +1280,7 @@ public class Seat implements Initializable{
             }else
                 btnC2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusC3(){
@@ -1310,7 +1295,7 @@ public class Seat implements Initializable{
             }else
                 btnC3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusC4(){
@@ -1325,7 +1310,7 @@ public class Seat implements Initializable{
             }else
                 btnC4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusD1(){
@@ -1340,7 +1325,7 @@ public class Seat implements Initializable{
             }else
                 btnD1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusD2(){
@@ -1355,7 +1340,7 @@ public class Seat implements Initializable{
             }else
                 btnD2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusD3(){
@@ -1370,7 +1355,7 @@ public class Seat implements Initializable{
             }else
                 btnD3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusD4(){
@@ -1385,7 +1370,7 @@ public class Seat implements Initializable{
             }else
                 btnD4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusE1(){
@@ -1400,7 +1385,7 @@ public class Seat implements Initializable{
             }else
                 btnE1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusE2(){
@@ -1415,7 +1400,7 @@ public class Seat implements Initializable{
             }else
                 btnE2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusE3(){
@@ -1430,7 +1415,7 @@ public class Seat implements Initializable{
             }else
                 btnE3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusE4(){
@@ -1445,7 +1430,7 @@ public class Seat implements Initializable{
             }else
                 btnE4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusF1(){
@@ -1460,7 +1445,7 @@ public class Seat implements Initializable{
             }else
                 btnF1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusF2(){
@@ -1475,7 +1460,7 @@ public class Seat implements Initializable{
             }else
                 btnF2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusF3(){
@@ -1490,7 +1475,7 @@ public class Seat implements Initializable{
             }else
                 btnF3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusF4(){
@@ -1505,7 +1490,7 @@ public class Seat implements Initializable{
             }else
                 btnF4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusG1(){
@@ -1520,7 +1505,7 @@ public class Seat implements Initializable{
             }else
                 btnG1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusG2(){
@@ -1535,7 +1520,7 @@ public class Seat implements Initializable{
             }else
                 btnG2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusG3(){
@@ -1550,7 +1535,7 @@ public class Seat implements Initializable{
             }else
                 btnG3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusG4(){
@@ -1565,7 +1550,7 @@ public class Seat implements Initializable{
             }else
                 btnG4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH1(){
@@ -1580,7 +1565,7 @@ public class Seat implements Initializable{
             }else
                 btnH1.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH2(){
@@ -1595,7 +1580,7 @@ public class Seat implements Initializable{
             }else
                 btnH2.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH3(){
@@ -1610,7 +1595,7 @@ public class Seat implements Initializable{
             }else
                 btnH3.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH4(){
@@ -1625,7 +1610,7 @@ public class Seat implements Initializable{
             }else
                 btnH4.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH5(){
@@ -1640,7 +1625,7 @@ public class Seat implements Initializable{
             }else
                 btnH5.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
     public void getStatusH6(){
@@ -1655,7 +1640,7 @@ public class Seat implements Initializable{
             }else
                 btnH6.setStyle(style3);
         } catch (Exception e) {
-            //TODO: handle exception
+            e.printStackTrace();
         }
     }
 }
