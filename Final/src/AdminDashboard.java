@@ -18,8 +18,11 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class AdminDashboard implements Initializable{
+public class AdminDashboard implements Initializable {
     Connection con = connection.BusConnecition();
+
+    @FXML
+    private Label labelWelcome;
 
     @FXML
     private Button btnLogout;
@@ -79,13 +82,13 @@ public class AdminDashboard implements Initializable{
         stage.setScene(new Scene(root));
     }
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         try {
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");  
             LocalDateTime now = LocalDateTime.now(); 
-             
+            
             Statement st = con.createStatement();
             String sql = "SELECT SUM(Quantity) FROM Transaksi WHERE TanggalTransaksi = '" + dtf.format(now) +"'";
             ResultSet rs = st.executeQuery(sql);
@@ -98,5 +101,4 @@ public class AdminDashboard implements Initializable{
             e.getCause();
         }
     }
-
 }
