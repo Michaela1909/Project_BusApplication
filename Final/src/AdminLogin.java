@@ -61,8 +61,8 @@ public class AdminLogin {
                     }else{
                         Alert alert = new Alert(AlertType.INFORMATION);
                         alert.setTitle("Error");
-                        alert.setHeaderText("Anda belum terdaftar sebagai user");
-                        alert.setContentText("Silahkan coba lagi atau daftar user!");
+                        alert.setHeaderText("Anda belum terdaftar sebagai admin");
+                        alert.setContentText("Silahkan coba lagi atau daftar admin!");
                         alert.showAndWait();
                     }
 
